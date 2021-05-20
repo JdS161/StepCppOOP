@@ -24,6 +24,7 @@
     <ProjectGuid>{78050b2b-043b-4d89-94c0-29261cd98133}</ProjectGuid>
     <RootNamespace>StepCppOOPVasilchenko</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>StepCppOOP_Vasilchenko_HW1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="StepCppOOP_Vasilchenko.cpp" />
+    <ClCompile Include="StepCppOOP_Vasilchenko_HW1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StepCppOOP_Vasilchenko.cpp">
+    <ClCompile Include="StepCppOOP_Vasilchenko_HW1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
