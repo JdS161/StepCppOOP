@@ -1,4 +1,9 @@
 #pragma once
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
 
 class Fraction
 {
@@ -10,7 +15,7 @@ private:
 
 public:
 	Fraction();
-	~Fraction();
+	//~Fraction();
 
 
 	void Sum(double, double);
@@ -23,10 +28,11 @@ public:
 
 
 
-Fraction::Fraction()
-{
-}
 
-Fraction::~Fraction()
-{
-}
+
+//Fraction::~Fraction()
+//{
+//}
+
+
+
