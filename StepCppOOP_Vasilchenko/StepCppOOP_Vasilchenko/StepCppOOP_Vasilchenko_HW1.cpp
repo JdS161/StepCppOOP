@@ -6,19 +6,33 @@
 
 using namespace std;
 
-#define Task1
+//#define Task1
 #define Task2
-
-
-//Задание 1.
-//Реализуйте класс Дробь.Необходимо хранить числитель
-//и знаменатель в качестве переменных - членов.Реализуйте
-//функции - члены для ввода данных в переменные - члены,
-//для выполнения арифметических операций(сложение,
-//    вычитание, умножение, деление, и т.д.).
 
 int main()
 {
-    
+
+#ifdef Task1
+
+	double numA, numB;
+
+
+	Fraction fraction(numA, numB);
+	fraction.Sum(numA, numB);
+	fraction.Division(numA, numB);
+	fraction.Subtraction(numA, numB);
+	fraction.Multiplication(numA, numB);
+
+#endif // Task1
+
+	
+#ifdef Task2
+
+
+#endif // Task2
+
+
+
+
 }
 
