@@ -35,7 +35,7 @@ public:
 
 	void Print();
 
-	//~Contacts();
+	~Contact();
 
 
 };

@@ -37,6 +37,26 @@ void Contact::Print()
 
 }
 
-//Contacts::~Contacts()
-//{
-//}
+Contact::~Contact()
+{
+	if (lastName != NULL)
+	{
+		delete[] lastName;
+		cout << "LAST NAME has been deleted." << endl;
+		lastName = NULL;
+	}
+	else
+		cout << "LAST NAME has already been deleted" << endl;
+
+	if (additionalInfo != NULL)
+	{
+		delete[] additionalInfo;
+		cout << "ADDITIONAL INFO has been deleted." << endl;
+		additionalInfo = NULL;
+	}
+	else
+		cout << "ADDITIONAL INFO has already been deleted" << endl;
+
+
+}
+
