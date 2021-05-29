@@ -5,18 +5,26 @@
 
 using namespace std;
 
-class TeleBook
+class PhoneBook
 {
 private:
-	int count;
+	//int count;
 	Contact* contact;
 
 	
 
 public:
-	TeleBook(int = 0, Contact* = NULL);
-	TeleBook(int, Contact*);
+	PhoneBook(/*int = 0, */Contact* = NULL);
+	PhoneBook(/*int, */Contact*);
 	
-	~TeleBook();
+	void AddNewContact();			
+	void DelContact();
+	void SearchContactName();
+	void ShowAllContacts();
+
+	void PrintBook();
+
+
+	~PhoneBook();
 
 };

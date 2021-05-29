@@ -1,49 +1,53 @@
+#pragma warning (disable : 4996)
+
 #include "Task2.h"
 
 
 
 Contact::Contact()
 {
-	lastName		= (char*) "Smith";
+	fullName		= (char*) "Smith";
 	homePhone		= 0;
 	officePhone		= 0;
 	mobilePhone		= 0;
-	additionalInfo	= NULL;
+	additionalInfo	= (char*) "NONE";
 }
 
 Contact::Contact(
-	char*	_lastName, 
+    char*	_fullName, 
 	long	_homePhone, 
 	long	_officePhone,
 	long	_mobilePhone,
 	char*	_additionalInfo)
 {
-	lastName = new char[strlen(_lastName) + 1];
+	fullName = new char[strlen(_fullName) + 1];
+	strcpy(fullName, _fullName);
 	homePhone = _homePhone;
 	officePhone = _officePhone;
 	mobilePhone = _mobilePhone;
 	additionalInfo = new char[strlen(_additionalInfo) + 1];
+	strcpy(additionalInfo, _additionalInfo);
 
 }
 
 void Contact::Print()
 {
-	cout << "LAST NAME: " << setw(15) << lastName << endl;
-	cout << "HOME PHONE: " << setw(15) << homePhone << endl;
-	cout << "OFFICE PHONE: " << setw(15) << officePhone << endl;
-	cout << "MOBILE PHONE: " << setw(15) << mobilePhone << endl;
-	cout << "ADDITIONAL INFO: " << setw(15) << additionalInfo << endl;
-
+	cout << "LAST NAME:         " << /*setw(15) <<*/ fullName << endl;
+	cout << "HOME PHONE:        " << /*setw(15) <<*/ homePhone << endl;
+	cout << "OFFICE PHONE:      " << /*setw(15) <<*/ officePhone << endl;
+	cout << "MOBILE PHONE:      " << /*setw(15) <<*/ mobilePhone << endl;
+	cout << "ADDITIONAL INFO:   " << /*setw(15) <<*/ additionalInfo << endl;
+	cout << endl << endl;
 
 }
 
 Contact::~Contact()
 {
-	if (lastName != NULL)
+	if (fullName != NULL)
 	{
-		delete[] lastName;
-		cout << "LAST NAME has been deleted." << endl;
-		lastName = NULL;
+		delete[] fullName;
+		//cout << "LAST NAME has been deleted." << endl;
+		fullName = NULL;
 	}
 	else
 		cout << "LAST NAME has already been deleted" << endl;
@@ -51,7 +55,7 @@ Contact::~Contact()
 	if (additionalInfo != NULL)
 	{
 		delete[] additionalInfo;
-		cout << "ADDITIONAL INFO has been deleted." << endl;
+		//cout << "ADDITIONAL INFO has been deleted." << endl;
 		additionalInfo = NULL;
 	}
 	else
@@ -59,4 +63,5 @@ Contact::~Contact()
 
 
 }
+
 

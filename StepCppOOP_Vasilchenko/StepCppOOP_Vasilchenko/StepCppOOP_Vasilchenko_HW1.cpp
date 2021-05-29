@@ -28,6 +28,13 @@ int main()
 	
 #ifdef Task2
 
+	Contact first((char*)"Alex Smith", 123456789, 23456, 41343123, (char*)"Engineer");
+	first.Print();
+
+	Contact second;
+	second.Print();
+
+	system("pause");
 
 #endif // Task2
 

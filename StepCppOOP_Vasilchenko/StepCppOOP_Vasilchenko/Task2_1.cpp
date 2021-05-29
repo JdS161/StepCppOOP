@@ -2,15 +2,36 @@
 
 
 
-TeleBook::TeleBook(int _count ,Contact* _contact)
+PhoneBook::PhoneBook(/*int _count ,*/Contact* _contact)
 {
 
 
 }
 
+void PhoneBook::AddNewContact()
+{
+}
+
+void PhoneBook::DelContact()
+{
+}
+
+void PhoneBook::SearchContactName()
+{
+}
+
+void PhoneBook::ShowAllContacts()
+{
+}
+
+void PhoneBook::PrintBook()
+{
+
+}
 
 
-TeleBook::~TeleBook()
+
+PhoneBook::~PhoneBook()
 {
 
 }
