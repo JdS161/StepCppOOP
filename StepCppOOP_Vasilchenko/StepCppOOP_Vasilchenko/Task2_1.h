@@ -8,14 +8,14 @@ using namespace std;
 class PhoneBook
 {
 private:
-	//int count;
-	Contact* contact;
+	int count;
+	Contact* book;
 
 	
 
 public:
-	PhoneBook(/*int = 0, */Contact* = NULL);
-	PhoneBook(/*int, */Contact*);
+	//PhoneBook(int = 0, Contact* = NULL);
+	PhoneBook(int, Contact*);
 	
 	void AddNewContact();			
 	void DelContact();
